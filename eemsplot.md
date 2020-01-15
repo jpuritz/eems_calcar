@@ -19,7 +19,7 @@ The program runeems_sats implements the EEMS method for analyzing spatial popula
 All files were created in Excel, copied into terminal using `nano`, and saved as the file name with the appropriate extension.
 
 #### Create separate directory for EEMS files
-```javascript
+```bash
 mkdir microsat_JP
 
 cd microsat_JP
@@ -29,7 +29,7 @@ All input files should be saved in this directory.
 
 #### Create a parameter file to set EEMS program arguments
 There are a number of program parameters that can be set by the user. Here is the parameter file I created, named `params-microsat-chain1.ini`. Read the [instruction manual](https://github.com/dipetkov/eems/blob/master/Documentation/EEMS-doc.pdf) for descriptions of each parameter.
-```javascript
+```R
 datapath = ./microsat_JP/microsat
 mcmcpath = ./microsat_JP/microsat-D200-chain1
 nIndiv = 600
@@ -55,7 +55,7 @@ too often (more than 40% of the time).
 I created two additional parameter files, one with 300 demes `params-microsat-chain2.ini`, the other with 600 demes `params-microsat-chain3.ini`. All other parameters were kept the same.
 
 ### Run the EEMS program
-```javascript
+```bash
 runeems_sats --params params-microsat-chain1.ini
 ```
 Repeat with the other two parameter files.
@@ -67,7 +67,7 @@ In RStudio
 
 #### Install rEEMSplots package
 This R package provides the function `eems.plots` to visualize the estimated effective migration and diversity surfaces. It is not on CRAN, so install it from source instead. In the R console:
-```javascript
+```R
 ## Check that the current directory contains the rEEMSplots source directory (from GitHub)
 if (file.exists("./rEEMSplots/")) {
   install.packages("rEEMSplots", repos=NULL, type="source")
@@ -75,16 +75,16 @@ if (file.exists("./rEEMSplots/")) {
   stop("Move to the directory that contains the rEEMSplots source to install the package.")
 }
 ```
-```javascript
+```R
 library(rEEMSplots)
 ```` 	
 #### Plotting EEMS after running runeems_snps
 
-```javascript
+```R
 path = "/home/azyck/Fiddler_Crab/ddocent_env/microsat_JP/"
 dirs = c(paste0(path,"microsat-D200-chain1"), paste0(path,"microsat-D300-chain1"), paste0(path,"microsat-D600-chain1"))
 ```
-```javascript
+```R
 eems.plots(mcmcpath = dirs, plotpath = "/home/azyck/Fiddler_Crab/ddocent_env/microsat_JP/microsat-All-plots",
            longlat = FALSE,add.grid=F,add.outline = T,add.demes = T, projection.in = "+proj=longlat +datum=WGS84", projection.out = "+proj=merc +datum=WGS84",
            add.map = T,add.abline = T, add.r.squared = T)
