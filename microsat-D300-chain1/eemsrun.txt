@@ -1,0 +1,40 @@
+Input parameter values:
+               datapath = ./microsat_JP/microsat
+               mcmcpath = ./microsat_JP/microsat-D300-chain1
+               prevpath = 
+               gridpath = 
+               distance = euclidean
+                diploid = 1
+                 nIndiv = 600
+                 nSites = 6
+                 nDemes = 300
+                   seed = 1565033784
+            numMCMCIter = 5000000
+            numBurnIter = 1000000
+            numThinIter = 9999
+              negBiSize = 10
+              negBiProb = 0.670000
+             qVoronoiPr = 0.250000
+             mrateShape = 0.000500
+             qrateShape = 0.002000
+             sigmaShape = 0.001000
+             qrateScale = 0.500000
+             mrateScale = 2.000000
+             sigmaScale = 1.000000
+       mSeedsProposalS2 = 0.100000
+       qSeedsProposalS2 = 0.100000
+       mEffctProposalS2 = 3.500000
+       qEffctProposalS2 = 0.030000
+      mrateMuProposalS2 = 0.100000
+
+Acceptance proportions:
+	(92078/312625) = 29% for proposal type "qTileRate",		 with proposal variance "qEffctProposalS2"
+	(106549/312989) = 34% for proposal type "qTileMove",		 with proposal variance "qSeedsProposalS2"
+	(213949/312284) = 69% for proposal type "qBirthDeath"
+	(346364/937162) = 37% for proposal type "mTileRate",		 with proposal variance "mEffctProposalS2"
+	(399301/1249939) = 32% for proposal type "mMeanRate",		 with proposal variance "mrateMuProposalS2"
+	(318525/937547) = 34% for proposal type "mTileMove",		 with proposal variance "mSeedsProposalS2"
+	(548446/937454) = 59% for proposal type "mBirthDeath"
+
+Final log prior: 78.053
+Final log llike: -27950.217
