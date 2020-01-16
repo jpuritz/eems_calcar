@@ -77,6 +77,9 @@ Run eems in parallel 3 chains per deme level
 ls params-microsat-D* | parallel runeems_sats --params {} >eems.out 2>&1
 ```
 
+
+## Plot data in R
+
 ``` r
 library("rEEMSplots")
 library("ggplot2")
