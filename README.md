@@ -6,6 +6,12 @@ The code used to perform the analysis and generate figures can be found in [EEMS
 ### Data
 Data used can be found in the [data](./data) directory
 
+### Parameters
+Parameter files can be found in the [params](./params) directory or recreated from the initial file [params-microsat-D48-chain1.ini](./params-microsat-D48-chain1.ini) in the [data](./data) directory or main directory
+
+### EEMS data
+EEMS data for each chain can be found in the [chains](./chains) directory
+
 ### Plots
 Raw plot images are in the [plots](./plots) directory
 
