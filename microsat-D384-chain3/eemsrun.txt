@@ -1,0 +1,40 @@
+Input parameter values:
+               datapath = /home/jpuritz/eems_calcar/microsat
+               mcmcpath = /home/jpuritz/eems_calcar/microsat-D384-chain3
+               prevpath = 
+               gridpath = 
+               distance = euclidean
+                diploid = 1
+                 nIndiv = 600
+                 nSites = 6
+                 nDemes = 384
+                   seed = 1579114798
+            numMCMCIter = 1000000
+            numBurnIter = 100000
+            numThinIter = 999
+              negBiSize = 10
+              negBiProb = 0.670000
+             qVoronoiPr = 0.250000
+             mrateShape = 0.000500
+             qrateShape = 0.002000
+             sigmaShape = 0.001000
+             qrateScale = 0.500000
+             mrateScale = 2.000000
+             sigmaScale = 1.000000
+       mSeedsProposalS2 = 0.150000
+       qSeedsProposalS2 = 0.150000
+       mEffctProposalS2 = 3.750000
+       qEffctProposalS2 = 0.040000
+      mrateMuProposalS2 = 0.150000
+
+Acceptance proportions:
+	(16453/62279) = 26% for proposal type "qTileRate",		 with proposal variance "qEffctProposalS2"
+	(17816/62566) = 28% for proposal type "qTileMove",		 with proposal variance "qSeedsProposalS2"
+	(43489/62705) = 69% for proposal type "qBirthDeath"
+	(67807/187386) = 36% for proposal type "mTileRate",		 with proposal variance "mEffctProposalS2"
+	(67072/250442) = 27% for proposal type "mMeanRate",		 with proposal variance "mrateMuProposalS2"
+	(53726/187586) = 29% for proposal type "mTileMove",		 with proposal variance "mSeedsProposalS2"
+	(110607/187036) = 59% for proposal type "mBirthDeath"
+
+Final log prior: 77.398
+Final log llike: -27938.413
