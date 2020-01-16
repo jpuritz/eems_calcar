@@ -17,3 +17,6 @@ Raw plot images are in the [plots](./plots) directory
 
 ### RData
 The RData files saved with each analysis can be found in the [Rdata](./Rdata) directory
+
+## Acknowledgements
+Many thanks to [Amy Zyck](https://github.com/amyzyck) for creating the EEMS data files and for the preliminary analysis.
